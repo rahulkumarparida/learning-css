@@ -1,0 +1,42 @@
+*{
+    
+    
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    
+}
+body{
+
+    background-image: url(https://i.redd.it/4fxxbm4opjd31.jpg);
+}
+p{
+    font-family:'Times New Roman', Times, serif;
+    color: aliceblue;
+    margin: 10%;
+    font-size: larger;
+    
+    background-color: rgb(235,0,0);
+}
+input{
+    background-color: antiquewhite;
+    border: 0 0;
+}
+#form{
+  
+    background-color: rgb(235, 0, 0);
+    margin: 10% 40%;
+    box-shadow: 8px 5px 5px 3px rgb(150, 17, 17);
+    border-radius: 15px;
+}
+button{
+    margin: 0;
+    background-color: antiquewhite;
+    margin-bottom: 10%;
+}
+.q{
+    background-color: black;
+    box-shadow: black;
+    width: 1px;
+    height: 2px;
+}
