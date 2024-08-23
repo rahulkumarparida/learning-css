@@ -5,50 +5,77 @@
 }
 body{
     height: 80rem;
-    width: 100rem;
+    width: 50rem;
     
 }
-.box{
+.box-cover{
     position: relative;
     margin:50px 50px;
- height: 100px;
- width: 200px;
- background-color: rgb(0, 255, 0);
- animation: animation 2s ease-in 0.5s infinite  ;
+ height: 40px;
+ width: 50px;
+ background-color: rgb(255, 255, 255);
+ 
+}
+
+.boxone,.boxtwo , .boxthree ,.boxfour {
+ position: absolute;
+ height: 13px;
+ width: 13px;
+ border-radius: 0px 0px 15px 15px;
+ 
+}
+.boxone{
+    background-color: rgb(0, 255, 0);
+    animation: animation 2s ease-in 0.5s infinite  ;
+ animation-fill-mode: forwards;
+ 
+}
+.boxtwo{
+    background-color: blue;
+    animation: animation 2s ease-in 1s infinite  ;
+ animation-fill-mode: forwards;
+    
+}
+.boxthree{
+    background-color: orange;
+    animation: animation 2s ease-in 1.5s infinite  ;
  animation-fill-mode: forwards;
 }
-img{
-    animation: animation 2s ease 0.5s infinite  ;
+.boxfour{
+    background-color: rgb(0, 255, 213);
+    animation: animation 2s ease-in 2s infinite  ;
  animation-fill-mode: forwards;
 }
+
+
 @keyframes  animation {
     0%{
     left: 0%;
     top: 0%;
-    border-radius: 0;
-    background-color: rgb(0, 255, 21);
+    
+
     }
     25%{
-        top: 50%;
+        top: 75%;
         left: 0%;
-        border-radius: 20px;
+      transform: rotateZ(-90deg);
     }
     50%{
-        top: 50%;
+        top: 75%;
         left: 60%;
-        border-radius: 48px;
+        transform: rotateZ(-180deg);
     }
     75%{
         top: 0%;
         left: 60%;
-        border-radius: 70px;
+        transform: rotateZ(-270deg);
+    
     }
     100%{
   left: 0%;
   top: 0%;
-  width: 95px;
-  border-radius: 80px;
-  background-color: aqua;
+  transform: rotateZ(-360deg);
+
     }
     
 }
